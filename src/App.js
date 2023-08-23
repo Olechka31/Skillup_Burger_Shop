@@ -8,9 +8,8 @@ import Shipping from "./components/cart/Shipping.jsx";
 
 import Login from "./components/login/Login.jsx";
 import Profile from "./components/profile/Profile.jsx";
-// Add module imports for MY ORDERS
-
-// import OrderDetails from "./components/myOrders/OrderDetails.jsx";
+import MyOrders from "./components/myOrders/MyOrders.jsx";
+import OrderDetails from "./components/myOrders/OrderDetails.jsx";
 import About from "./components/about/About.jsx";
 
 
@@ -42,9 +41,8 @@ function App() {
         
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
-         {/* //           Add the Route for MY ORDERS */}
-
-        {/* <Route path="/order/:id" element={<OrderDetails />} /> */}
+        <Route path="/myorders" element={<MyOrders />} />
+        <Route path="/order/:id" element={<OrderDetails />} />
       
        
 

@@ -3,9 +3,8 @@ import Home from "./components/home/Home.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import Header from "./components/layout/Header.jsx";
 import Contact from "./components/contact/Contact.jsx";
-// Add module imports for CART
-
-// Add module imports for Shipping
+import Cart from "./components/cart/Cart.jsx";
+import Shipping from "./components/cart/Shipping.jsx";
 
 import Login from "./components/login/Login.jsx";
 import Profile from "./components/profile/Profile.jsx";
@@ -38,9 +37,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-          {/* //           Add the Route for CART
-      
-          //           Add the Route for SHIPPING */}
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/shipping" element={<Shipping />} />
         
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
